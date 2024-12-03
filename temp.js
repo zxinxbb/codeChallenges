@@ -1,4 +1,4 @@
-const temp = (temperature,type)=>{
+const temperatureConverter = (temperature,type)=>{
     if (type=="F"){
 result = (temperature-32)/9*5
     }
@@ -7,4 +7,4 @@ result = (temperature-32)/9*5
     }
 console.log(result)
 }
-temp(60,"F")
+temperatureConverter(60,"F")

@@ -1,4 +1,4 @@
-const toRoman = (number) => {
+const numtoRoman = (number) => {
     let count = number;
     const romanNumerals = [];
     while (count > 0) {

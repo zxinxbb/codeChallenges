@@ -2,9 +2,9 @@
 
 const numbers = [1,2,3,7]
 
-const isSeven = (number) => number ==7
+const isNumSeven = (number) => number ==7
 
-if (numbers.some(isSeven)==true){
+if (numbers.some(isNumSeven)==true){
     console.log ("Boom!")
 }
 else {
