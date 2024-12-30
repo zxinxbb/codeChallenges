@@ -1,24 +1,35 @@
 //Parking charges exercise
-const phrase = "The cost of parking will be:"
 
-const costOfParking = (hour) => {
+
+function costOfParking  (hour)  {
+    const phrase = "The cost of parking will be:"
     if (hour<=5){
-        console.log(`${phrase}`,300)
+        return (`${phrase}`,300)
     }
     else if (hour>5 && hour<=10){
-        console.log(`${phrase}`,350)
+        return(`${phrase}`,350)
     }
     else if (hour>10 && hour<=15){
-        console.log(`${phrase}`,500)
+        return(`${phrase}`,500)
     }
     else if (hour>15 && hour<=20){
-        console.log(`${phrase}`,700)
+        return(`${phrase}`,700)
     }
     else if (hour>20 && hour <=24){
-        console.log(`${phrase}`,400)
+        return(`${phrase}`,400)
     }
     else {
-        console.log("Please enter a number between 0 and 24")
+        return("Please enter a number between 0 and 24")
     }
 }
-costOfParking (23)
+
+const hour = 23
+const expected =  400
+const result = costOfParking (23)
+console.log(result)
+
+if (result === expected) {
+    console.log('Test passed!')
+} else {
+    console.log(`Test failed. Expected ${expected}, but got ${result}.`)
+        }
